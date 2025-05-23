@@ -285,22 +285,24 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Force exactly 3 columns */
   gap: 2em;
   justify-items: center;
 }
 
+
 @media (max-width: 900px) {
   .projects__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
   }
 }
 
 @media (max-width: 600px) {
   .projects__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 column on phones */
   }
 }
+
 
 
 .project {
